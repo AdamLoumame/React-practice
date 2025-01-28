@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	@apply p-8 md:p-16 bg-slate-800 h-dvh;
+}
+.flex-center {
+	@apply flex justify-center items-center;
+}
+#app {
+	height: 100%;
+}
+.wrong-letter {
+	@apply bg-red-500 text-white;
+}
+.wrong-letter:hover {
+	@apply bg-red-500 !important;
+}
+.right-letter {
+	@apply bg-green-500 text-white;
+}
+.right-letter:hover {
+	@apply bg-green-500 !important;
+}
+.html {
+	background-color: #dc2626;
+	color: #fff;
+}
+.css {
+	background-color: #2563eb;
+	color: #fff;
+}
+.javascript {
+	background-color: #facc15;
+	color: #000;
+}
+.python {
+	background-color: #1e40af;
+	color: #fff;
+}
+.ruby {
+	background-color: #7f1d1d;
+	color: #fff;
+}
+.java {
+	background-color: #1e3a8a;
+	color: #fff;
+}
+.go {
+	background-color: #00add8;
+	color: #000;
+}
+.php {
+	background-color: #1e3a8a;
+	color: #fff;
+}
+.rust {
+	background-color: #b7410e;
+	color: #fff;
+}
+.assembly {
+	background-color: #6b7280;
+	color: #fff;
+}
+.dead {
+	position: relative;
+	overflow: hidden;
+}
+.dead::before {
+	@apply flex-center size-full;
+	content: "☠";
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.6);
+}
